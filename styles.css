@@ -1,0 +1,327 @@
+/* Basic Styles */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a2533;
+    color: #f5f6fa;
+    line-height: 1.6;
+
+/* Header Styles */
+header {
+    background: #223042;
+    padding: 24px 0 0 0;
+    -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Navigation Bar Styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+    background: transparent;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+nav a {
+    color: #f5f6fa;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #7ec4cf;
+}
+/* About Me Section */
+.about-me {
+    max-width: 800px;
+    margin: 48px auto 32px auto;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    background: #223042;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.about-me h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.about-me p {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+/* Projects Section */
+.projects {
+    max-width: 1200px;
+    margin: 0 auto 48px auto;
+    padding: 0 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+.project-card {
+    -webkit-transition: -webkit-transform 0.2s, box-shadow 0.2s;
+    -moz-transition: -moz-transform 0.2s, box-shadow 0.2s;
+    -o-transition: -o-transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 10px;
+    -webkit-transform: translateY(-4px) scale(1.02);
+    -ms-transform: translateY(-4px) scale(1.02);
+    transform: translateY(-4px) scale(1.02);
+    -webkit-box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    margin: 0;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover,
+.project-card:focus-within {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+.project-card p {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+}
+/* Skills Section */
+.skills {
+    max-width: 800px;
+    margin: 0 auto 48px auto;
+    padding: 32px;
+    background: #223042;
+    border-radius: 12px;
+}
+
+.skills h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 2rem;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    position: relative;
+    padding-left: 32px;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.skills-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #7ec4cf;
+    font-size: 1.2rem;
+    top: 0;
+}
+
+/* Contact Section */
+.contact {
+    max-width: 600px;
+    margin: 0 auto 48px auto;
+    padding: 32px;
+    background: #223042;
+    border-radius: 12px;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 2rem;
+}
+
+.contact-form {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    margin-bottom: 6px;
+    color: #bfc9d1;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    background: #1a2533;
+    color: #f5f6fa;
+    font-size: 1rem;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #7ec4cf;
+}
+
+.contact-form button {
+    background: #7ec4cf;
+    color: #223042;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.contact-form button:hover,
+.contact-form button:focus {
+        -webkit-border-radius: 0 0 12px 12px;
+        -moz-border-radius: 0 0 12px 12px;
+        border-radius: 0 0 12px 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 16px;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        display: none;
+        background: #223042;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        padding: 16px 0;
+        border-radius: 0 0 12px 12px;
+        z-index: 100;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+        position: relative;
+        z-index: 101;
+    }
+
+    .hamburger span,
+    .hamburger span:before,
+    .hamburger span:after {
+        display: block;
+        background: #f5f6fa;
+        height: 4px;
+        width: 100%;
+        border-radius: 2px;
+        position: absolute;
+        transition: all 0.3s;
+        content: '';
+    }
+
+    .hamburger span {
+        top: 14px;
+        left: 0;
+        position: absolute;
+    }
+    .hamburger span:before {
+        content: '';
+        top: -10px;
+        left: 0;
+        position: absolute;
+    }
+    .hamburger span:after {
+        content: '';
+        top: 10px;
+        left: 0;
+        position: absolute;
+    }
+
+    /* Hide hamburger on desktop */
+    @media (min-width: 769px) {
+        .hamburger {
+            display: none;
+        }
+    }
+
+    .about-me,
+    .skills,
+    .contact {
+        padding: 20px;
+    }
+
+    .projects {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 8px;
+    }
+
+    .project-card {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+/* Responsive media */
+img,
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+}
